@@ -1,0 +1,13 @@
+[{'generative_prompt': "dnjdnojj   "}
+{'generative_response': '```'}
+{'current_iteration': 0}
+{'evaluation_prompt': 'vdjvv'}
+{'evaluation_response': 'vdlsj '}
+{'score': 8}
+{'optimize_prompt': 'vsovln '}
+{'optimize_response': 'n```'}
+{'current_iteration': 1}
+{'evaluation_prompt': '\n'}
+{'evaluation_response': 'cndn'}
+{'score': 9}
+]

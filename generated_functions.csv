@@ -1,0 +1,13 @@
+Metadata,Function
+datatype,"```python\ndef get_column_datatypes(df, col):\n    return df[col].dtype\n```"
+float_precision,"```python\nimport pandas as pd\nimport numpy as np\n\ndef analyze_column(df, col):\n    if pd.api.types.is_numeric_dtype(df[col]):\n        return df[col].astype(float).apply(lambda x: np.finfo(float).precision if not np.isnan(x) else np.nan)\n    else:\n        return None\n\n```"
+is_integer,"```python\nimport pandas as pd\n\ndef is_integer_column(df, col):\n    return pd.api.types.is_integer_dtype(df[col])\n```"
+is_float,"```python\ndef is_float_column(df, col):\n    return pd.api.types.is_float_dtype(df[col])\n\n```"
+is_text,"```python\nimport pandas as pd\n\ndef is_text_column(df, col):\n    try:\n        pd.to_numeric(df[col])\n        return False\n    except:\n        return True\n\n```"
+eq_median_count,"```python\ndef eq_median_count(df, column):\n    median = df[column].median()\n    return (df[column] == median).sum()\n```"
+gt_median_count,"```python\ndef eq_median_count(df, column):\n    return len(df[df[column] > df[column].median()])\n\n```"
+mode_value,"```python\ndef get_mode(df, column):\n    return df[column].mode().tolist()\n```"
+mean_value,"```python\ndef calculate_mean(df, column):\n    return df[column].mean()\n```"
+standard_deviation,"```python\nimport pandas as pd\n\ndef column_std_dev(df, column):\n    return df[column].std()\n```"
+min_value,"```python\ndef get_min_value(df, column):\n    return df[column].min()\n\n```"
+max_value,"```python\ndef get_max_value(df, column):\n    return df[column].max()\n```"
